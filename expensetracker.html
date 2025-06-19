@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expensetracker.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Expense Tracker App</h1>
+    </header>
+
+    <main>
+      <section id="expense-form">
+        <h2>Add Expense</h2>
+        <form id="form">
+          <input
+            type="text"
+            id="description"
+            placeholder="Description"
+            required
+          />
+          <input type="number" id="amount" placeholder="Amount" required />
+          <input type="date" id="date" required />
+          <button type="submit">Add Expense</button>
+        </form>
+      </section>
+
+      <section id="expenses-list">
+        <h2>Expenses</h2>
+        <ul id="list"></ul>
+      </section>
+
+      <section id="balance">
+        <h2>Total Balance: <span id="total">0</span></h2>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Expense Tracker</p>
+    </footer>
+
+    <script src="EXPENSE.JS"></script>
+  </body>
+</html>
